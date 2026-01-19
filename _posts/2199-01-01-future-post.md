@@ -1,5 +1,5 @@
 ---
-title: 'Future Blog Post'
+title: '标记物'
 date: 2199-01-01
 permalink: /posts/2012/08/blog-post-4/
 tags:
@@ -8,4 +8,6 @@ tags:
   - category2
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+这一页是没有什么用处的标记物，如果你看到这东西，那么说明至少这个垃圾网页还在正常运行）
+
+
