@@ -11,16 +11,16 @@ main:
   - title: "没什么用的栏目"
     url: /publications/
 
-  - title: "Talks"
+  - title: "不知道干啥的栏目"
     url: /talks/    
 
-  - title: "Teaching"
+  - title: "空无一物的栏目"
     url: /teaching/    
     
-  - title: "Portfolio"
+  - title: "毫无意义的栏目"
     url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "各种杂文"
     url: /year-archive/
     
   - title: "CV"
