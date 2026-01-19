@@ -8,19 +8,19 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
+  - title: "吹牛皮"
     url: /publications/
 
-  - title: "Talks"
+  - title: "毫无意义的栏目"
     url: /talks/    
 
-  - title: "Teaching"
+  - title: "没有一点用处的栏目"
     url: /teaching/    
     
-  - title: "Portfolio"
+  - title: "不知道用来干什么的栏目"
     url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "各种杂文"
     url: /year-archive/
     
   - title: "CV"
