@@ -23,7 +23,7 @@ repository               : "awencat/awencat.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "awenprofile.png"
   name             : "阿文天狗的猫"
   pronouns         : # example: "she/her"  
   bio              : "QWQ-QWQ-QWQ-QWQ-QWQ-QWQ"
