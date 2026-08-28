@@ -1,5 +1,5 @@
 <script setup>
-const avatarUrl = `${import.meta.env.BASE_URL}images/avatar.png`
+const avatarUrl = `${import.meta.env.BASE_URL}images/avatar.jpg`
 </script>
 
 <template>

@@ -12,6 +12,6 @@ describe('SiteHeader', () => {
 
     const avatar = wrapper.get('a[aria-label="返回主页"] img')
     expect(avatar.attributes('alt')).toBe('awencat 的头像')
-    expect(avatar.attributes('src')).toContain('avatar.ping')
+    expect(avatar.attributes('src')).toContain('avatar.jpg')
   })
 })
