@@ -4,13 +4,14 @@
 
 ## 功能
 
-- 主页：头像、自我介绍和精选图片相册
-- 文章栏：内置 Markdown 文章、`.md` 文件上传、在线编辑和预览
+- 主页：左上角头像、自我介绍、自动相册和联系方式
+- 相册：按文件名顺序自动读取 `src/assets/gallery/` 下的全部图片，并支持横向滑动
+- 文章栏：简洁的内置 Markdown 文章列表
 - 文章详情：使用 `MdPreview` 展示 Markdown，并提供本地评论区
 - 未来页面：用于后续功能开发的占位空间
 - GitHub Pages：Hash 路由和 GitHub Actions 自动部署
 
-> 上传的文章和评论保存在浏览器 `localStorage` 中，不会同步给其他访客。项目内置文章需要提交 Markdown 文件并重新部署。
+> 评论保存在浏览器 `localStorage` 中，不会同步给其他访客。项目内置文章需要提交 Markdown 文件并重新部署。
 
 ## 本地开发
 
@@ -46,7 +47,8 @@ cover: ./images/gallery-1.svg
 ## 自定义内容
 
 - 主页文字：`src/views/HomeView.vue`
-- 头像与相册：`public/images/`
+- 头像：`public/images/avatar.svg`
+- 相册：`src/assets/gallery/`，文件按自然文件名顺序展示
 - 站点样式：`src/styles/main.css`
 - 站点名称与导航：`src/components/SiteHeader.vue`
 

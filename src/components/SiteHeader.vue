@@ -1,7 +1,11 @@
+<script setup>
+const avatarUrl = `${import.meta.env.BASE_URL}images/avatar.svg`
+</script>
+
 <template>
   <header class="site-header">
     <RouterLink class="brand" to="/" aria-label="返回主页">
-      <span class="brand-mark">A</span>
+      <img class="brand-avatar" :src="avatarUrl" alt="Awenio 的头像" />
       <span>Awenio</span>
     </RouterLink>
     <nav class="site-nav" aria-label="主导航">
