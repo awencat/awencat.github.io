@@ -88,11 +88,11 @@ function scrollGallery(direction) {
         <dl class="contact-list">
           <div>
             <dt>GitHub</dt>
-            <dd><a href="https://github.com/your-name">github.com/your-name</a></dd>
+            <dd><a href="https://github.com/awencat">github.com/your-name</a></dd>
           </div>
           <div>
             <dt>QQ</dt>
-            <dd>123456789</dd>
+            <dd>2364355319</dd>
           </div>
         </dl>
       </div>
