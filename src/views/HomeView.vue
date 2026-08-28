@@ -25,13 +25,13 @@ function scrollGallery(direction) {
     <section class="hero section-shell">
       <div class="hero__copy">
         <p class="eyebrow">Personal notes · 个人笔记</p>
-        <h1>你好，我是 Awenio。</h1>
+        <h1>你好，我是 awencat。</h1>
         <p class="hero__lead">
-          我用文字记录思考，用照片收藏日常。这里是一份保持简单、持续更新的个人档案。
+          骗你的这个网页其实是用GPT胡乱vibe出来的，【不过凑合着看看嘛】。
         </p>
         <div class="hero__actions">
-          <RouterLink class="button button--primary" to="/articles">阅读文章</RouterLink>
-          <a class="button button--ghost" href="#about">认识我</a>
+          <RouterLink class="button button--primary" to="/articles">阅读文章【翻看废话】</RouterLink>
+          <a class="button button--ghost" href="#about">认识我【竟然不许】</a>
         </div>
       </div>
     </section>
@@ -70,11 +70,10 @@ function scrollGallery(direction) {
         </div>
         <div class="about-copy">
           <p>
-            我是一名喜欢创造与分享的普通人，关注技术、设计和生活里细小但有趣的部分。
-            建立这个网站，是想为自己的文字和照片留一处安静、长期的空间。
+            嘿，你怎么翻到这下面了，不是说好了【大仁物】永不低头吗？
           </p>
           <p>
-            目前这里还很简单。未来我会继续增加新的内容，也欢迎你通过文章下方的评论留下想法。
+            目前这里还什么都没有，滚木大战智软。
           </p>
         </div>
       </div>
