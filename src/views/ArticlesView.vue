@@ -8,6 +8,7 @@ const articles = getAllArticles(window.localStorage, builtinArticles)
 
 <template>
   <div class="section-shell page-stack">
+    <div class="page-tabs"><RouterLink to="/">主页</RouterLink><span class="selected">文章归档</span><span class="page-tabs__note">{{ articles.length }} 篇记录</span></div>
     <header class="page-header">
       <p class="eyebrow">废话 & 智软</p>
       <h1>文章（废话）</h1>

@@ -4,10 +4,11 @@
 
 ## 功能
 
-- 主页：左上角头像、自我介绍、自动相册和联系方式
+- 界面：蓝灰配色、Wiki 式页签与分区面板，桌面端使用个人资料侧栏
+- 主页：自我介绍、最新文章、自动相册和联系方式
 - 相册：按文件名顺序自动读取 `src/assets/gallery/` 下的全部图片，并支持横向滑动
 - 文章栏：简洁的内置 Markdown 文章列表
-- 文章详情：使用 `MdPreview` 展示 Markdown，并提供本地评论区
+- 文章详情：使用 `MdPreview` 展示 Markdown、`MdCatalog` 提供目录跳转，并提供本地评论区
 - 未来页面：用于后续功能开发的占位空间
 - GitHub Pages：Hash 路由和 GitHub Actions 自动部署
 
@@ -47,10 +48,11 @@ cover: ./images/gallery-1.svg
 ## 自定义内容
 
 - 主页文字：`src/views/HomeView.vue`
-- 头像：`public/images/avatar.svg`
+- 头像：`public/images/avatar.jpg`
 - 相册：`src/assets/gallery/`，文件按自然文件名顺序展示
 - 站点样式：`src/styles/main.css`
 - 站点名称与导航：`src/components/SiteHeader.vue`
+- 个人资料侧栏：`src/components/SiteSidebar.vue`
 
 ## 部署到 GitHub Pages
 

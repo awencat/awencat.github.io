@@ -1,5 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import ArticleCard from '../components/ArticleCard.vue'
+import { builtinArticles } from '../content/articles.js'
+import { getAllArticles } from '../services/articleStore.js'
+
+const recentArticles = getAllArticles(window.localStorage, builtinArticles).slice(0, 3)
 
 const galleryRail = ref(null)
 const galleryModules = import.meta.glob(
@@ -21,7 +26,8 @@ function scrollGallery(direction) {
 </script>
 
 <template>
-  <div>
+  <div class="home-page">
+    <div class="page-tabs"><span class="selected">主页</span><RouterLink to="/articles">文章归档</RouterLink><span class="page-tabs__note">欢迎来到个人空间</span></div>
     <section class="hero section-shell">
       <div class="hero__copy">
         <p class="eyebrow">Personal notes · 个人笔记</p>
@@ -31,9 +37,14 @@ function scrollGallery(direction) {
         </p>
         <div class="hero__actions">
           <RouterLink class="button button--primary" to="/articles">阅读文章【翻看废话】</RouterLink>
-          <a class="button button--ghost" href="#about">认识我【竟然不许】</a>
+          <RouterLink class="button button--ghost" :to="{ path: '/', hash: '#about' }">认识我【竟然不许】</RouterLink>
         </div>
       </div>
+    </section>
+
+    <section class="recent-section section-shell" aria-labelledby="recent-title">
+      <div class="section-heading"><h2 id="recent-title">最新文章</h2><RouterLink class="text-link" to="/articles">全部文章 →</RouterLink></div>
+      <div class="article-list"><ArticleCard v-for="article in recentArticles" :key="article.id" :article="article" /></div>
     </section>
 
     <section class="gallery-section section-shell" aria-labelledby="gallery-title">
@@ -88,7 +99,7 @@ function scrollGallery(direction) {
         <dl class="contact-list">
           <div>
             <dt>GitHub</dt>
-            <dd><a href="https://github.com/awencat">github.com/your-name</a></dd>
+            <dd><a href="https://github.com/awencat">github.com/awencat</a></dd>
           </div>
           <div>
             <dt>QQ</dt>

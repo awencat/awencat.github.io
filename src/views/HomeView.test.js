@@ -14,7 +14,7 @@ describe('HomeView', () => {
   it('introduces the owner and renders every gallery image in filename order', () => {
     const wrapper = mountHome()
 
-    expect(wrapper.get('h1').text()).toContain('你好，我是 Awenio')
+    expect(wrapper.get('h1').text()).toContain('你好，我是 awencat')
     expect(wrapper.get('[aria-label="自我介绍"]').text()).toContain('关于我')
     const images = wrapper.findAll('[data-gallery-item] img')
     expect(images).toHaveLength(3)
@@ -33,11 +33,11 @@ describe('HomeView', () => {
     expect(wrapper.get('button[aria-label="下一张照片"]')).toBeTruthy()
   })
 
-  it('shows placeholder GitHub and QQ contact details at the bottom', () => {
+  it('shows the configured GitHub and QQ contact details at the bottom', () => {
     const wrapper = mountHome()
 
     const contacts = wrapper.get('[aria-label="联系方式"]').text()
-    expect(contacts).toContain('github.com/your-name')
-    expect(contacts).toContain('123456789')
+    expect(contacts).toContain('github.com/awencat')
+    expect(contacts).toContain('2364355319')
   })
 })

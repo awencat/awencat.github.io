@@ -13,7 +13,10 @@ const router = createRouter({
     { path: '/future', name: 'future', component: () => import('./views/FutureView.vue') },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
-  scrollBehavior: () => ({ top: 0 }),
+  scrollBehavior(to) {
+    if (to.hash) return { el: to.hash, top: 80, behavior: 'smooth' }
+    return { top: 0 }
+  },
 })
 
 export default router
