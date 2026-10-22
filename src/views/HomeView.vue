@@ -27,7 +27,6 @@ function scrollGallery(direction) {
 
 <template>
   <div class="home-page">
-    <div class="page-tabs"><span class="selected">主页</span><RouterLink to="/articles">文章归档</RouterLink><span class="page-tabs__note">欢迎来到个人空间</span></div>
     <section class="hero section-shell">
       <div class="hero__copy">
         <p class="eyebrow">Personal notes · 个人笔记</p>
